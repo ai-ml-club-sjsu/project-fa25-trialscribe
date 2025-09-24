@@ -38,7 +38,7 @@ Automating Clinical Trial Template Creation for Compliance and Efficiency
 
 ## Project Kanban Board
 
-**🔗 Public Board:** [View our Kanban Board](https://github.com/aiml-club/project-fa25-trialscribe/projects/1)
+**🔗 Public Board:** [View our Kanban Board]((https://github.com/orgs/ai-ml-club-sjsu/projects/7))
 
 ## Repository Structure
 

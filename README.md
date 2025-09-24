@@ -17,9 +17,9 @@ Automating Clinical Trial Template Creation for Compliance and Efficiency
 
 **Project Lead:** Vikram Arunkumar 
 📧 Email: vikram.arunkumar@sjsu.edu 
-💼 LinkedIn: [https://www.linkedin.com/in/sdlc-software-engineer/]
-📱 Phone: [908-670-2211]  
-🏢 Office Hours: [M 12-4, T 10:30-4, W 12-5, Th 10-5, F 10-5], [One Washington Square, San Jose, CA 95192]
+💼 LinkedIn: https://www.linkedin.com/in/sdlc-software-engineer/
+📱 Phone: 908-670-2211
+🏢 Office Hours: M 12-4, T 10:30-4, W 12-5, Th 10-5, F 10-5, One Washington Square, San Jose, CA 95192
 
 **Faculty Advisor:** [Advisor Name]  
 📧 Email: [advisor.email@university.edu]  
@@ -31,7 +31,7 @@ Automating Clinical Trial Template Creation for Compliance and Efficiency
 
 | Name | Role | Email | GitHub |
 |------|------|-------|--------|
-| [Vikram Arunkumar] | Project Lead & [Primary Role] | [vikram.arunkumar@sjsu.edu] | [@VikramArunkumar](https://github.com/VikramArunkumar) |
+| [Vikram Arunkumar] | Project Lead & [Primary Role] | vikram.arunkumar@sjsu.edu | @VikramArunkumar(https://github.com/VikramArunkumar) |
 | [Member Name 2] | [Role] | [email@university.edu] | [@github-username](https://github.com/username) |
 | [Member Name 3] | [Role] | [email@university.edu] | [@github-username](https://github.com/username) |
 | [Member Name 4] | [Role] | [email@university.edu] | [@github-username](https://github.com/username) |
@@ -68,8 +68,8 @@ Automating Clinical Trial Template Creation for Compliance and Efficiency
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/aiml-club/[repo-name].git
-   cd [repo-name]
+   git clone https://github.com/aiml-club/project-fa25-trialscribe.git
+   cd project-fa25-trialscribe
    ```
 
 2. **Create virtual environment:**

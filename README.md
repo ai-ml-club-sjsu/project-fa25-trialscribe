@@ -43,7 +43,7 @@ Automating Clinical Trial Template Creation for Compliance and Efficiency
 ## Repository Structure
 
 ```
-[project-repo-name]/
+project-fa25-trialscribe/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore

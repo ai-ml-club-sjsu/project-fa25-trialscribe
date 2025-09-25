@@ -1,0 +1,6 @@
+{
+  "project_name": "TrialScribe",
+  "purpose": "Automating Clinical Trial Template Creation for Compliance and Efficiency",
+  "short_description": "Our project, Automating Clinical Trial Template Creation for Compliance and Efficiency, tackles the slow, error-prone process of preparing trial documents. Manual methods struggle to keep pace with complex regulatory requirements from FDA, EMA, and ICH. Using AI, NLP, and deep learning frameworks like PyTorch and Transformers, we generate standardized, compliant templates that accelerate documentation workflows. Our target audience includes clinical researchers, regulatory specialists, and trial sponsors seeking efficiency and accuracy. We expect faster trial startups, reduced compliance errors, and scalable adaptability across therapeutic areas—empowering teams to focus on innovation while meeting rigorous standards with confidence.",
+  "semester": "fa25"
+}

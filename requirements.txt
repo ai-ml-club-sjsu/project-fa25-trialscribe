@@ -1,0 +1,30 @@
+# Core PDF generation
+reportlab>=4.0.5
+
+# Environment configuration
+python-dotenv>=1.0.1
+
+# Web server and file handling
+flask>=3.0.3
+express  # if using node.js UI, ignore for Python
+fastapi>=0.110.0
+uvicorn>=0.30.0
+aiofiles>=23.2.1
+
+# LangChain ecosystem
+langchain-core>=0.2.0
+langchain-anthropic>=0.2.0
+langchain-textsplitters>=0.0.3
+langgraph>=0.0.12
+
+# Embeddings (local/offline)
+transformers>=4.40.0
+torch>=2.2.0
+
+# PDF parsing
+pdfjs>=0.6.0
+pdfminer.six>=20231228
+
+# Misc utilities
+tqdm>=4.66.2
+nanoid>=2.0.0

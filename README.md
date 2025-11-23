@@ -31,7 +31,7 @@ Automating Clinical Trial Template Creation for Compliance and Efficiency
 
 | Name | Role | Email | GitHub |
 |------|------|-------|--------|
-| [Vikram Arunkumar] | Project Lead & [Primary Role] | vikram.arunkumar@sjsu.edu | @VikramArunkumar(https://github.com/VikramArunkumar) |
+| [Vikram Arunkumar] | Project Lead & Developer | vikram.arunkumar@sjsu.edu | @VikramArunkumar(https://github.com/VikramArunkumar) |
 | [Member Name 2] | [Role] | [email@university.edu] | [@github-username](https://github.com/username) |
 | [Member Name 3] | [Role] | [email@university.edu] | [@github-username](https://github.com/username) |
 | [Member Name 4] | [Role] | [email@university.edu] | [@github-username](https://github.com/username) |
@@ -90,9 +90,9 @@ project-fa25-trialscribe/
 
 ## Technology Stack
 
-- **Programming Language:** [Primary Language]
-- **ML/AI Libraries:** [Library 1], [Library 2], [Library 3]
-- **Development:** [Development Tools]
+- **Programming Language:** JavaScript
+- **ML/AI Libraries:** LangChain, LangGraph, Claude
+- **Development:** VisualCode
 - **Version Control:** Git & GitHub
 - **[Category]:** [Tools/Technologies]
 - **Database:** [Database Technology]
@@ -110,8 +110,8 @@ This project is licensed under the [License Type] License - see the [LICENSE](LI
 
 ---
 
-**Last Updated:** [9/24/25]  
-**Next Review:** [9/26/25]
+**Last Updated:** [11/18/25]  
+**Next Review:** [11/24/25]
 
 ---
 

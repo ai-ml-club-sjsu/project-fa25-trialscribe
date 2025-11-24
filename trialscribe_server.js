@@ -6,6 +6,7 @@ import fs from "fs";
 import path from "path";
 import process from "process";
 import { fileURLToPath } from "url";
+import { createRequire } from "module";
 
 import express from "express";
 import cors from "cors";
@@ -22,6 +23,7 @@ import { pipeline } from "@xenova/transformers";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const require = createRequire(import.meta.url); // <-- ESM-friendly require
 
 // ---------------- Embeddings ----------------
 class XenovaEmbeddings extends Embeddings {
@@ -84,7 +86,13 @@ class SimpleVectorStore {
 async function extractTextFromPDF(filePath) {
   const pdfjsLib = await import("pdfjs-dist/legacy/build/pdf.mjs"); // lazy load
   const data = new Uint8Array(fs.readFileSync(filePath));
-  const loadingTask = pdfjsLib.getDocument({ data });
+   // Tell PDF.js where its standard fonts live to avoid the warning/error
+  const pdfjsPkgDir = path.dirname(require.resolve("pdfjs-dist/package.json"));
+  const loadingTask = pdfjsLib.getDocument({
+    data,
+    standardFontDataUrl: path.join(pdfjsPkgDir, "standard_fonts/"),
+  });
+
   const pdfDoc = await loadingTask.promise;
   let out = "";
   for (let pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
@@ -188,12 +196,12 @@ const DocState = Annotation.Root({
 function buildGraph(retriever) {
   const graph = new StateGraph(DocState);
   graph.addNode("retrieve", makeRetrieveNode(retriever));
-  graph.addNode("draft", draftNode);
+  graph.addNode("draft_step", draftNode);
   graph.addNode("check", checkNode);
   graph.addNode("revise", reviseNode);
   graph.setEntryPoint("retrieve");
-  graph.addEdge("retrieve", "draft");
-  graph.addEdge("draft", "check");
+  graph.addEdge("retrieve", "draft_step");
+  graph.addEdge("draft_step", "check");
   graph.addConditionalEdges("check", decideNext, { revise: "revise", end: END });
   graph.addEdge("revise", "check");
   return graph.compile();
